@@ -27,7 +27,7 @@ async function init() {
 
 /**
  * Querying the DB returns the data in a separate column, and
- * value form. We preffer the data to be key-value. So this
+ * value form. We prefer the data to be key-value. So this
  * utility function will do that.
  */
 function serialize(data) {
@@ -89,7 +89,7 @@ export const getPetById = ((async (event) => {
 }))
 
 /**
- * Get an owner by ID. This should return all of the owners perts.
+ * Get an owner by ID. This should return all of the owners pets.
  * Route: /api/owners/{id}
  *
  **/
