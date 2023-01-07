@@ -79,11 +79,11 @@ export const getPetById = ((async (event) => {
     // Initialize the DB
     let db = await init();
 
-    let petId : Number = 0
-    if (event.pathParameters != undefined) {
+    let petId : Number = 1
+
+    if (event != undefined) {
         petId = Number(event.pathParameters.id)
     }
-
     // Prepare an sql statement
     const stmt = db.prepare("SELECT * FROM pets WHERE id=:id ");
 
